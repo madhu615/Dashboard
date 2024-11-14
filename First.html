@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+  <input type="checkbox" id="sidebar-toggle" hidden>
+
+  <label for="sidebar-toggle" class="overlay"></label>
+ 
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <label for="sidebar-toggle" class="close-overlay"></label>
+      <div class="sidebar-brand">Dashboard</div>
+      <nav class="nav-links">
+        <div class="nav-item"><span class="material-icons">home</span> Home</div>
+        <div class="nav-item"><span class="material-icons">account_circle</span> Profile</div>
+        <div class="nav-item"><span class="material-icons">mail</span> Messages</div>
+        <div class="nav-item"><span class="material-icons">history</span> History</div>
+        <div class="nav-item"><span class="material-icons">task</span> Tasks</div>
+        <div class="nav-item"><span class="material-icons">groups</span> Communities</div>
+        <div class="nav-item"><span class="material-icons">settings</span> Settings</div>
+        <div class="nav-item"><span class="material-icons">support</span> Support</div>
+        <div class="nav-item"><span class="material-icons">security</span> Privacy</div>
+      </nav>
+    </aside>
+
+    <!-- Overlay for clicking outside of the sidebar to close it -->
+    
+    <div class="container">
+    <header class="header">
+      <div class="header-top">
+        <label for="sidebar-toggle" class="sidebar-toggle"><span class="material-icons">menu</span></label>
+        <div class="search-bar">
+          <span class="material-icons">search</span>
+          <input type="search">
+      </div>
+      <div class="header-top-right">
+          <span class="material-icons">notifications</span>
+          <img src="images/profile-pic.png" alt="User img" class="avatar">
+          <span>Morgan Oakley</span>
+      </div>
+      </div>
+      <div class="header-down">
+        <div class="greeting-text">
+          <img src="images/profile-pic.png" alt="Avatar for Morgan Oakley" class="avatar">
+
+          <div class="greeting-text-top">
+          <p>Hi there,</p>
+          <h2>Morgan Oakley (@morgan)</h2>
+          </div>   
+      </div>
+      <div class="header-down-right">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+      </div>
+    </header>   
+    <!-- Main Content -->
+    <main class="main-content"> 
+      <!-- Projects, Announcements, Trending sections -->
+      <section class="projects-title">
+        <h3>Your Projects</h3>
+        <div class="projects">  
+        
+        <div class="project-card">
+            <h4>Super Cool Project</h4>
+            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+            <div class="project-actions">
+                <span class="material-icons">star_border</span>
+                <span class="material-icons">visibility</span>
+                <span class="material-icons">share</span>
+            </div>
+        </div>
+        <div class="project-card">
+            <h4>Less Cool Project</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Dolores repellat magni maiores. Distinctio temporibus quisquam qui vitae sunt repellat numquam?
+               Nam illo, cum quam ea inventore explicabo blanditiis voluptatibus veritatis!.</p>
+            <div class="project-actions">
+                <span class="material-icons">star_border</span>
+                <span class="material-icons">visibility</span>
+                <span class="material-icons">share</span>
+               
+            </div>
+        </div>
+        <div class="project-card">
+            <h4>Impossible App</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolores repellat magni maiores. Distinctio temporibus quisquam qui vitae sunt repellat numquam?
+                Nam illo, cum quam ea inventore explicabo blanditiis voluptatibus veritatis!</p>
+            <div class="project-actions">
+                <span class="material-icons">star_border</span>
+                <span class="material-icons">visibility</span>
+                <span class="material-icons">share</span>
+                
+            </div>
+        </div>
+        <div class="project-card">
+            <h4>Easy Peasy App</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolores repellat magni maiores. Distinctio temporibus quisquam qui vitae sunt repellat numquam?
+                Nam illo, cum quam ea inventore explicabo blanditiis voluptatibus veritatis!.</p>
+            <div class="project-actions">
+                <span class="material-icons">star_border</span>
+                <span class="material-icons">visibility</span>
+                <span class="material-icons">share</span>
+           
+            </div>
+        </div>
+        <div class="project-card">
+            <h4>Ad Blocker</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolores repellat magni maiores. Distinctio temporibus quisquam qui vitae sunt repellat numquam?
+                Nam illo, cum quam ea inventore explicabo blanditiis voluptatibus veritatis!.</p>
+            <div class="project-actions">
+                <span class="material-icons">star_border</span>
+                <span class="material-icons">visibility</span>
+                <span class="material-icons">share</span>
+               
+            </div>
+        </div>
+        <div class="project-card">
+            <h4>Money Maker</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolores repellat magni maiores. Distinctio temporibus quisquam qui vitae sunt repellat numquam?
+                Nam illo, cum quam ea inventore explicabo blanditiis voluptatibus veritatis!.</p>
+            <div class="project-actions">
+                <span class="material-icons">star_border</span>
+                <span class="material-icons">visibility</span>
+                <span class="material-icons">share</span>
+            </div>
+        </div>
+        </div>
+      </section>
+      <div class="side-content">
+        <div class="announcements-name">
+        <h3>Announcements</h3>
+        <div class="announcements">
+            <div class="announcement-item">
+                <h4>Site Maintenance</h4>
+                <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+            </div><hr/>
+            <div class="announcement-item">
+                <h4>Community Share Day</h4>
+                <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+            </div><hr />
+            <div class="announcement-item">
+                <h4>Community Share Day</h4>
+                <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+            </div>
+        </div>
+        </div>
+        <div class="trending-name">
+        <h3>Trending</h3>
+        <div class="trending">
+            <div class="trending-item">
+                <img src="images/lion.jpg" alt="Avatar for Tegan" class="avatar">
+                <div>
+                    <span>@tegan</span>
+                    <p>World Peace Builder</p>
+                </div>
+            </div>
+            <div class="trending-item">
+                <img src="images/lion.jpg" alt="Avatar for Morgan" class="avatar">
+                <div>
+                    <span>@morgan</span>
+                    <p>Super Cool Project</p>
+                </div>
+            </div>
+            <div class="trending-item">
+                <img src="images/lion.jpg" alt="Avatar for Kendall" class="avatar">
+                <div>
+                    <span>@kendall</span>
+                    <p>Life Changing App</p>
+                </div>
+            </div>
+            <div class="trending-item">
+                <img src="images/lion.jpg" alt="Avatar for Alex" class="avatar">
+                <div>
+                    <span>@alex</span>
+                    <p>No Traffic Maker</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>
